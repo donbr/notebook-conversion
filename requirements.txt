@@ -1,0 +1,39 @@
+# Orchestration
+prefect==3.4.1
+
+# Web framework & ASGI
+fastapi>=0.111.0,<1.0.0
+uvicorn[standard]==0.23.1
+
+# Data & validation (example extras)
+pandas==2.0.3
+numpy==1.25.2
+pandera==0.14.3
+
+# RAG & embedding
+langchain==0.3.25
+openai==0.27.5
+sentence-transformers==2.2.2
+
+# Testing
+pytest==7.4.1
+httpx>=0.28.0,<1.0.0
+
+# Notebook conversion tooling
+jupytext>=1.16
+click>=8.1
+
+# # Jupytext runtime dependency
+# nbformat>=5.10
+
+# # Additional dependency
+# traitlets>=5.12
+
+# fastjsonschema>=2.19
+
+# jsonschema>=4.21
+
+# attrs>=23.2
+
+# referencing>=0.30
+# rpds-py>=0.12

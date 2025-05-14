@@ -1,0 +1,35 @@
+# --- Python artefacts ---------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dylib
+*.egg
+*.egg-info/
+
+# Build artefacts
+build/
+dist/
+
+# Virtual environments / dotenv
+.venv/
+.env
+
+# Editor / OS
+.DS_Store
+*.swp
+
+# Cursor metadata
+.cursor/
+
+# --- Notebook data directories ----------------------------------------------
+# Keep directory *paths* in git, but ignore everything inside except a placeholder
+raw/*
+!raw/.gitkeep
+
+interim/*
+!interim/.gitkeep
+
+processed/*
+!processed/.gitkeep 
