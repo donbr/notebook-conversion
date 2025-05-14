@@ -1,16 +1,14 @@
-# RAG-Notebook Pipeline
+# Notebook Conversion Pipeline
 
-A curated set of research / demo **Jupyter notebooks** exploring Retrieval-Augmented Generation (RAG) techniques.  A fully-automated pipeline keeps the notebooks tidy, well-documented and easy to browse:
+An evolving set of tools that takes **Jupyter notebooks** and breaks them down into markdown and python components.  At this point, simply an interim step to further refactoring.
 
-* **Raw ideas in → clean artefacts out.**  You can focus on experimentation; the repository takes care of formatting, code / markdown separation and a searchable index.
-* **Reproducibility first.**  Every generated artefact can be rebuilt from the original `.ipynb`, so the repo never bloats with transient files.
-* **Cross-platform.**  Works on Windows, macOS and Linux (Python 3.11).
+Future plans include use of tools like Prefect for ingestion pipelines.
 
 ## Directory structure
 
 | Folder | Contents | Git policy |
 |--------|----------|------------|
-| `raw/` | Original **source** notebooks (`*.ipynb`). | Folder is version-controlled, notebook *contents* are ignored so you can commit paths without bloating the repo. |
+| `raw/` | Original **source** notebooks (`*.ipynb`). | Folder is kept; contents ignored. |
 | `interim/` | Sanitised copies of each notebook plus generated pairs:<br>• `<slug>-py-only.py` (code)<br>• `<slug>-md-only.md` (markdown)<br>• `index.md` catalogue | Folder is kept; **all contents are git-ignored**—recreate at any time with a converter run. |
 | `processed/` | Reserved for future artefacts (e.g. data outputs, converted formats). | Folder is kept; contents ignored. |
 
